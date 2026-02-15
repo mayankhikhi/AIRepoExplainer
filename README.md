@@ -75,7 +75,7 @@ http://localhost:3000
 
 ## Screenshots
 
-![App screenshot](https://ibb.co/SXYzBZQY)
+![App screenshot](appscreenshot/repoexplainer.jpg)
 
 ---
 This project was build to understand real-world API integrations and SDK-based workflows commonely used in modern web applications and startup environments.
