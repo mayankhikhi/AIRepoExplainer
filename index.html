@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Repo Explainer</title>
+    <script>
+        tailwind.config = {
+
+        }
+    </script>
+
+</head>
+<body class="bg-black text-slate-300 font-sans w-screen ">
+    <main>
+        <div >
+            <h2 class="relative z-10 text-center animate-on-scroll text-2xl text-white font-bold mt-20">
+                Welcome to Repo Explainer! <br>
+            </h2>
+            <p class="mt-4 text-center text-gray-400">
+                 A tool to help you get a brief summary of any GitHub repository. <br>
+                    Just enter the repository URL and let Repo Explainer do the rest! <br>
+            </p>
+            <section id="search-section" class="relative">
+                <div
+                    class="blob absolute rounded-full opacity-20">
+                </div>
+                <div id="search-form"
+                class="mt-12 text-center font-medium">
+                    <label for="search-query" class="block text-sm font-medium text-slate-300">
+                        Enter GitHub Repository URL:   
+                    </label>
+                    <input type="text" id="repoInput" placeholder="https://github.com/" class="mt-1 bg-slate-800 border border-slate-600 rounded-md shadow-sm py-2 px-3 text-white focus:outline-none">
+                    <button onclick="getSummary()" class="mt-4 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">
+                        Get Summary
+                    </button>
+                    <div id="result" class="mt-6 text-center"></div>
+                </div>
+            </section>            
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
